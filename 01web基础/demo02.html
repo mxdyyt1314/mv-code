@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo02</title>
+    <style>
+        #dv{
+            width:100%;
+            height:75px;
+            background:url("img/2.jpg") repeat-x;
+            transition: 10s;
+        }
+    </style>
+</head>
+<body>
+<div id="dv">
+</div>
+
+<script>
+document.getElementById("dv").style.backgroundPositionX=(-document.getElementById("dv").clientWidth)+"px";
+var index=1;
+    function rollBanner(){
+        setTimeout(function(){
+            document.getElementById("dv").style.backgroundPositionX=(-document.getElementById("dv").clientWidth*index)+"px";
+            index++;
+            rollBanner();
+        },10000);
+    }
+    rollBanner();
+</script>
+</body>
+</html>

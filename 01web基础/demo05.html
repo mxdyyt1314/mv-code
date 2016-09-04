@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo05</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #container {
+            width: 244px;
+            height: 289px;
+            background: url("img/bg-2.gif") repeat-y;
+            padding: 50px;
+        }
+
+        #container > #box {
+            width: 244px;
+            height: 289px;
+            background: #fff;
+        }
+
+        #box > div {
+            height: 46px;
+            border-bottom: 1px solid #d6d6d6;
+        }
+
+        #box > div:first-child {
+            height: 49px;
+        }
+
+        #box > div:last-child {
+            border: none;
+            height: 51px;
+        }
+        #box >.on{
+            border-left:2px solid #cd6834;
+            width:242px;
+        }
+
+        #box > .home {
+            background: url("img/demo05/bg-house.gif") no-repeat 21px  17px #ffffff;
+        }
+
+        #box > .person {
+            background: url("img/demo05/bg-person.gif") no-repeat  21px 16px #fdfdfd;
+        }
+
+        #box > .bag {
+            background: url("img/demo05/bg-bag.gif") no-repeat 21px 15px #fcfcfc;
+        }
+
+        #box > .setting {
+            background: url("img/demo05/bg-setting.gif") no-repeat 21px  16px #fafafa;
+        }
+
+        #box > .newlist {
+            background: url("img/demo05/bg-newlist.gif") no-repeat 22px 17px #f7f7f7;
+        }
+
+        #box > .phone {
+            background: url("img/demo05/bg-phone.gif") no-repeat  21px 15px #f5f5f5;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="box">
+        <div class="home"></div>
+        <div class="person"></div>
+        <div class="bag on"></div>
+        <div class="setting"></div>
+        <div class="newlist"></div>
+        <div class="phone"></div>
+    </div>
+</div>
+</body>
+</html>

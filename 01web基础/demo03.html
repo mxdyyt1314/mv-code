@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo03</title>
+    <style>
+        #box {
+            width: 300px;
+            height: 215px;
+        }
+
+        #box > div:first-child {
+            width: 116px;
+            border-top: 2px solid #206f96;
+        }
+
+        #box > div > .title {
+            height: 29px;
+            border-left: 1px solid #cfcfcf;
+            border-right: 1px solid #cfcfcf;
+            background: url("img/title-bg.gif")
+        }
+
+        #box > .content-box {
+            height: 182px;
+            border: 1px solid #cfcfcf;
+        }
+
+        #box > .content-box > .email {
+            height: 57px;
+            background: url("img/icon-email.gif") no-repeat 16px 25px;
+        }
+
+        #box > .content-box > .mouse {
+            height: 125px;
+            background: #f7f7f7 url("img/icon-mouse.gif") 9px 51px no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div>
+        <div class="title"></div>
+    </div>
+    <div class="content-box">
+        <div class="email"></div>
+        <div class="mouse"></div>
+    </div>
+</div>
+</body>
+</html>
